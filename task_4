@@ -1,0 +1,10 @@
+/ Программа проверяет пятизначное число на палиндромом.
+Console.WriteLine("enter five-digit number");
+int number = int.Parse(Console.ReadLine() ?? "0");
+int N1 = (number/10000);
+int N2 = ((number%10000)/1000);
+int N3 = (((number%10000)%1000)/100);
+int N4 = ((((number%10000)%1000)%100)/10);
+int N5 = ((((number/10000)%1000)%100)%10);
+int palindrome=(N5*10000+N4*1000+N3*100+N2*10+N1);
+Console.Write(palindrome==number ? "palindrome": "Not palindrome");
