@@ -1,0 +1,23 @@
+//Задать номер четверти, показать диапазоны для возможных координат
+Console.WriteLine("enter quarter number from 1 to 4");
+int quater = int.Parse(Console.ReadLine() ?? "0");
+    if (quater == 1)
+   {
+      Console.WriteLine("X from 0 to infinity, y from 0 to infinity");
+   }
+else if (quater == 2)
+   {
+      Console.WriteLine("X from 0 to infinity, y from 0 to infinity");
+   }      
+ else if (quater == 3)
+   {
+      Console.WriteLine("X from 0 to infinity, y from 0 to infinity");
+   }      
+   else if (quater == 4)
+   {
+      Console.WriteLine("X from 0 to infinity, y from 0 to infinity");
+   }      
+else
+{
+    Console.WriteLine("not a quater");
+}
