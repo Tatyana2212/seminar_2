@@ -1,0 +1,32 @@
+// Дано число обозначающее день недели. Выяснить является номер дня недели выходным.
+Console.WriteLine("enter weekdays: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday  from 1 to 7 ");
+int weekday = int.Parse(Console.ReadLine()?? "0");
+if (weekday <= 7)
+switch (weekday)
+{
+ case 1: 
+Console.Write("Monday, working day ");
+break;
+ case 2: 
+Console.Write("Tuesday, working day ");
+break;
+case 3: 
+Console.Write("Wednesday, working day ");
+break;
+case 4: 
+Console.Write("Thursday, working day ");
+break;
+case 5: 
+Console.Write("Friday, working day ");
+break;
+case 6: 
+Console.Write("Saturday, dayoff ");
+break;
+case 7: 
+Console.Write("Sunday, dayoff  ");
+break;
+} 
+ else 
+{
+ Console.Write("Not a weekday ");
+}
