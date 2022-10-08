@@ -1,0 +1,22 @@
+// Найти расстояние между точками в пространстве 2D/3D
+Console.Write("enter X1:");
+int x1 = int.Parse(Console.ReadLine() ?? "0");
+Console.Write("enter Y1:");
+int y1 = int.Parse(Console.ReadLine() ?? "0");
+Console.Write("enter Z1:");
+int z1 = int.Parse(Console.ReadLine() ?? "0");
+Console.Write("enter X2:");
+int x2 = int.Parse(Console.ReadLine() ?? "0");
+Console.Write("enter Y2:");
+int y2 = int.Parse(Console.ReadLine() ?? "0");
+Console.Write("enter Z2:");
+int z2 = int.Parse(Console.ReadLine() ?? "0");
+double a = x1-x2;
+double b = y1-y2;
+double c = z1-z2;
+double d = a*a+b*b;
+double e = a*a+b*b+c*c;
+double result1 = Math.Sqrt(d);
+double result2 = Math.Sqrt(e);
+Console.WriteLine("point spacing in 2D " + result1);
+Console.Write("point spacing in 3D " + result2);
